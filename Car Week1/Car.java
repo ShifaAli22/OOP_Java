@@ -47,6 +47,7 @@ public class Car{
 
     public void setSpeed(int speed){
         this.speed = speed;
+        autoGear();
     }
 
     public void setGear(int gear){
@@ -83,14 +84,18 @@ public class Car{
 
     public void on(){
         this.key = true;
+        display();
     }
 
     public void off(){
         this.key = false;
+        brake();
     }
 
     public void accelerate(){
         this.speed = speed + 10;
+        autoGear();
+        display();
     }
 
     public void changeGear(int newGear){
@@ -99,10 +104,31 @@ public class Car{
     }else{
         System.out.println("invalid gear");
     }
+    display();
     }
 
     public void brake(){
-        this.speed = speed - 10;
+        while (this.speed > 0){
+            this.speed = speed - 10;
+            autoGear();
+    }
+    display();
+    }
+
+    public void autoGear(){
+        if (this.speed == 0){
+            this.gear = 0;
+        }else if (this.speed <= 20){
+            this.gear = 1;
+        } else if (this.speed <= 40){
+            this.gear = 2;
+        }else if (this.speed <= 60){
+            this.gear = 3;
+        }else if (this.speed <= 80){
+            this.gear = 4;
+        }else if (this.speed <= 100){
+            this.gear = 5;
+        }
     }
 
     public void display(){

@@ -3,14 +3,18 @@ public class main {
     System.out.println("class Car output");
     Car coco = new Car();
     coco.display();
-    coco.setKey(true);
+    coco.on();
     coco.setBrand("ferrari");
     coco.setModel("Roma");
     coco.setColor("Pink");
+    coco.setSpeed(50);
     coco.display();
     coco.changeGear(9);
     coco.changeGear(5);
     System.out.println("gear " + coco.getGear());
+    coco.accelerate();
+    coco.brake();
+
     
     System.out.println();
 
