@@ -1,0 +1,32 @@
+class Car output
+Car: Brand = , Model = , Color = , Speed = 0, Gear = 0, Key = false
+Car: Brand = , Model = , Color = , Speed = 0, Gear = 0, Key = true
+Car: Brand = ferrari, Model = Roma, Color = Pink, Speed = 50, Gear = 3, Key = true
+invalid gear
+Car: Brand = ferrari, Model = Roma, Color = Pink, Speed = 50, Gear = 3, Key = true
+Car: Brand = ferrari, Model = Roma, Color = Pink, Speed = 50, Gear = 5, Key = true
+gear 5
+Car: Brand = ferrari, Model = Roma, Color = Pink, Speed = 60, Gear = 3, Key = true
+Car: Brand = ferrari, Model = Roma, Color = Pink, Speed = 0, Gear = 0, Key = true
+
+class Calculator output
+Adding
+number 1 = 2
+number 2 = 5
+result = 7
+subtracting
+number 1 = 2
+number 2 = 2
+result = 0
+multiplying
+number 1 = 4
+number 2 = 10
+result = 40
+dividing
+number 1 = 15
+number 2 = 3
+result = 5
+number 1 = 4
+number 2 = 8
+result = 0
+A = 4
